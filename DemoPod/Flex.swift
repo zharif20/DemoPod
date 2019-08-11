@@ -9,7 +9,7 @@
 import UIKit
 import AFNetworking
 
-open class Flex: NSObject {
+public class Flex: NSObject {
     
     public func message(msg: String) {
         print("\(msg)")
