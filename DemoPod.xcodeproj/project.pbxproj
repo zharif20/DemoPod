@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5898DA33230074D100A33E99 /* Flex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898DA32230074D100A33E99 /* Flex.swift */; };
 		58CCE33F23006F4D003775B8 /* DemoPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 58CCE33D23006F4D003775B8 /* DemoPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CC2B770C1F56C5202A35995 /* Pods_DemoPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF661BD80B1C165A82A3A28 /* Pods_DemoPod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36482036B009150A6E117DB4 /* Pods-DemoPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoPod.release.xcconfig"; path = "Target Support Files/Pods-DemoPod/Pods-DemoPod.release.xcconfig"; sourceTree = "<group>"; };
+		3EF661BD80B1C165A82A3A28 /* Pods_DemoPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5898DA32230074D100A33E99 /* Flex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flex.swift; sourceTree = "<group>"; };
 		58CCE33A23006F4D003775B8 /* DemoPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CCE33D23006F4D003775B8 /* DemoPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoPod.h; sourceTree = "<group>"; };
 		58CCE33E23006F4D003775B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A86DEE002334D056CF19DFAE /* Pods-DemoPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoPod.debug.xcconfig"; path = "Target Support Files/Pods-DemoPod/Pods-DemoPod.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC2B770C1F56C5202A35995 /* Pods_DemoPod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +39,8 @@
 			children = (
 				58CCE33C23006F4D003775B8 /* DemoPod */,
 				58CCE33B23006F4D003775B8 /* Products */,
+				E46EDB61D526B9E16EB34026 /* Pods */,
+				D684416FA24C3EB03446CF33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +57,26 @@
 			children = (
 				58CCE33D23006F4D003775B8 /* DemoPod.h */,
 				58CCE33E23006F4D003775B8 /* Info.plist */,
+				5898DA32230074D100A33E99 /* Flex.swift */,
 			);
 			path = DemoPod;
+			sourceTree = "<group>";
+		};
+		D684416FA24C3EB03446CF33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EF661BD80B1C165A82A3A28 /* Pods_DemoPod.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E46EDB61D526B9E16EB34026 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A86DEE002334D056CF19DFAE /* Pods-DemoPod.debug.xcconfig */,
+				36482036B009150A6E117DB4 /* Pods-DemoPod.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58CCE34223006F4D003775B8 /* Build configuration list for PBXNativeTarget "DemoPod" */;
 			buildPhases = (
+				D8B40DA9B063CA44618D8C54 /* [CP] Check Pods Manifest.lock */,
 				58CCE33523006F4D003775B8 /* Headers */,
 				58CCE33623006F4D003775B8 /* Sources */,
 				58CCE33723006F4D003775B8 /* Frameworks */,
@@ -95,6 +123,7 @@
 				TargetAttributes = {
 					58CCE33923006F4D003775B8 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -125,11 +154,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D8B40DA9B063CA44618D8C54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoPod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58CCE33623006F4D003775B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5898DA33230074D100A33E99 /* Flex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +315,9 @@
 		};
 		58CCE34323006F4D003775B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A86DEE002334D056CF19DFAE /* Pods-DemoPod.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -270,6 +327,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DemoPod/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,14 +336,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Locust.DemoPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		58CCE34423006F4D003775B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36482036B009150A6E117DB4 /* Pods-DemoPod.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -295,6 +356,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DemoPod/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Locust.DemoPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
