@@ -34,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5898DA522301702D00A33E99 /* Flex */ = {
+			isa = PBXGroup;
+			children = (
+				5898DA32230074D100A33E99 /* Flex.swift */,
+			);
+			path = Flex;
+			sourceTree = "<group>";
+		};
 		58CCE33023006F4C003775B8 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +65,7 @@
 			children = (
 				58CCE33D23006F4D003775B8 /* DemoPod.h */,
 				58CCE33E23006F4D003775B8 /* Info.plist */,
-				5898DA32230074D100A33E99 /* Flex.swift */,
+				5898DA522301702D00A33E99 /* Flex */,
 			);
 			path = DemoPod;
 			sourceTree = "<group>";
