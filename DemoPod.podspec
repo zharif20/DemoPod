@@ -24,17 +24,16 @@ Pod::Spec.new do |s|
                :tag => "#{s.version}" }
   
   # 7
-  s.framework = "UIKit"
-  s.dependency 'AFNetworking',
+  s.framework = 'UIKit'
+  s.dependency 'AFNetworking'
   
   # 8
-  s.source_files = "DemoPod/**/*.{swift,m,h}"
+  s.source_files = 'DemoPod/**/*.{swift,m,h}'
   
   # 9
   #s.resources = "DemoPod/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
   
   # 10
-  s.swift_version = "4.2"
+  s.swift_version = '4.2'
   
   end
-  
